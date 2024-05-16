@@ -40,13 +40,13 @@ const ForgotPas = () => {
                     </div>
                     <div className='flex items-center flex-col mt-[3rem]'>
                         <h1 className='md:text-[3rem] text-[1.5rem] font-fold font-[700]'>Forgot Password</h1>
-                        <h2 className='md:text-[1.1rem] text-[.7rem] text-color1 font-[700] w-[45%] text-center font-mon'>Please enter your email address. You will
+                        <h2 className='md:text-[1.1rem] text-[.7rem] text-color1 font-[700] md:w-[45%] w-[80%] text-center font-mon'>Please enter your email address. You will
                             receive a link to create a new password
                             via email.</h2>
                         <div className='mt-[3rem]  max-w-[100%] sm:w-[450px] w-full flex flex-col gap-[6rem]' >
                             <InputPass placeholder='Email Address' type='email' style={{ width: '100%', padding: "10px", marginTop: "1.5rem", cursor: 'pointer', borderRadius: '30px', backgroundColor: '#DDDDDD' }} />
                             <div className='flex justify-center items-center w-full' >
-                                <div className=' flex justify-center items-center  px-[5rem] py-2 gap-2 bg-color1 pointer text-white  rounded-3xl cursor-pointer' onClick={() => router.push('/emailVer')}>
+                                <div className=' flex justify-center items-center  md:px-[5rem] px-[3rem]  py-2 gap-2 bg-color1 pointer text-white  rounded-3xl cursor-pointer' onClick={() => router.push('/emailVer')}>
                                     <p className=''>Next</p>
                                     <Image src={arrowRight} alt='' width={20} height={20} className='' />
                                 </div>
