@@ -38,15 +38,15 @@ const ForgotPas = () => {
                         <Image src={logo} alt='' width={120} height={120} className='md:w-[120px] md:h-[120px] sm:w-[55px] sm:h-[55px] w-[60px] h-[60px]' />
                         <p className='md:text-[20px] text-[15px] font-[700] max-[420px]:text-[12px]'>Uniclique</p>
                     </div>
-                    <div className='flex items-center flex-col mt-[3rem]'>
+                    <div className='flex items-center flex-col mt-[3rem] w-full'>
                         <h1 className='md:text-[3rem] text-[1.5rem] font-fold font-[700]'>Forgot Password</h1>
                         <h2 className='md:text-[1.1rem] text-[.7rem] text-color1 font-[700] md:w-[45%] w-[80%] text-center font-mon'>Please enter your email address. You will
                             receive a link to create a new password
                             via email.</h2>
-                        <div className='mt-[3rem]  max-w-[100%] sm:w-[450px] w-full flex flex-col gap-[6rem]' >
-                            <InputPass placeholder='Email Address' type='email' style={{ width: '100%', padding: "10px", marginTop: "1.5rem", cursor: 'pointer', borderRadius: '30px', backgroundColor: '#DDDDDD' }} />
+                        <div className='mt-[3rem]  max-w-[100%] sm:w-[450px] w-full flex flex-col md:gap-[3rem] gap-[1rem]' >
+                            <InputPass placeholder='Email Address' type='email' style={{ width: '100%', padding: "10px", marginTop: "1rem", cursor: 'pointer', borderRadius: '30px', backgroundColor: '#DDDDDD' }} />
                             <div className='flex justify-center items-center w-full' >
-                                <div className=' flex justify-center items-center  md:px-[5rem] px-[3rem]  py-2 gap-2 bg-color1 pointer text-white  rounded-3xl cursor-pointer' onClick={() => router.push('/emailVer')}>
+                                <div className=' flex justify-center items-center  md:px-[5rem] px-[2rem]  py-2 gap-2 bg-color1 pointer text-white  rounded-3xl cursor-pointer' onClick={() => router.push('/emailVer')}>
                                     <p className=''>Next</p>
                                     <Image src={arrowRight} alt='' width={20} height={20} className='' />
                                 </div>
