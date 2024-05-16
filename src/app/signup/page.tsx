@@ -11,8 +11,13 @@ import logo from '../../images/Union (2).svg'
 import Form from '@/component/form'
 import emoji from '../../images/emojipng 1.svg'
 import eyeOpen from '../../images/eye-off (1).svg'
+import { useRouter } from 'next/navigation'
 
 const SignUp = () => {
+    const router = useRouter()
+
+
+
     const [passwordVisible, setPasswordVisible] = useState(false)
     const [confirmpasswordVisible, setConfirmPasswordVisible] = useState(false)
 
@@ -28,14 +33,14 @@ const SignUp = () => {
         <div style={{
             backgroundImage: `url(${bg.src})`,
             width: '100%',
-            height: '100vh',
+            // height: '100vh',
             backgroundRepeat: "no-repeat",
             backgroundPosition: 'left',
         }} className='outer-container'>
             <section className='bg-left flex justify-center w-full bg-gradient-to-r relative inner-container h-[100vh]' style={{
                 backgroundImage: `url(${bgg.src})`,
                 width: '100%',
-                height: '100vh',
+                // height: '100vh',
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: 'right'
             }} >
@@ -45,7 +50,7 @@ const SignUp = () => {
                         <p className='md:text-[20px] text-[15px] font-[700] max-[420px]:text-[12px]'>Uniclique</p>
                     </div>
 
-                    <div className='flex items-center flex-col'>
+                    <div className='flex items-center flex-col mt-[0rem]'>
                         <h1 className='md:text-[2.5rem] text-[1.5rem] font-fold font-[700] flex gap-1 items-center'>Get Started <Image src={emoji} alt='' width={50} height={50} /></h1>
                         <h2 className='md:text-[1rem] text-[.8rem] text-color1 font-[500]'>Create an account as a user.</h2>
                         <div className='mt-[1rem] p-6 rounded-lg shadow-lg shadow-cyan-500/50 max-w-[100%] sm:w-[450px] bg-white w-full flex flex-col gap-7' >
@@ -62,7 +67,7 @@ const SignUp = () => {
                                 <Image src={confirmpasswordVisible ? eyeOpen : eyelock} alt='' width={15} height={15} onClick={togConfirm} className='absolute right-[2%] flex justify-center items-center top-[57%]' />
                             </div>
                         </div>
-                        <Button style={{ backgroundColor: "#590209", fontSize: "12px", font: 'bold', padding: "15px", color: '#fff', width: '90%', marginTop: "20px", marginBottom: "5px" }} text='Sign Up' />
+                        <Button style={{ backgroundColor: "#590209", fontSize: "12px", font: 'bold', padding: "15px", color: '#fff', width: '90%', marginTop: "20px", marginBottom: "200px" }} text='Sign Up' onClick={() => router.push('/verification')} />
                     </div>
                 </div>
             </section>

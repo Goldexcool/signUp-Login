@@ -3,11 +3,12 @@ import React from 'react'
 interface ButtonProps {
     text: string;
     style?: React.CSSProperties;
+    onClick?: () => void
 }
 
-const Button: React.FC<ButtonProps> = ({ text, style }) => {
+const Button: React.FC<ButtonProps> = ({ text, style, onClick }) => {
     return (
-        <button className='p-2 bg-color1 ' style={style}>{text}</button>
+        <button className='p-2 bg-color1 ' style={style} onClick={onClick}>{text}</button>
     )
 }
 
