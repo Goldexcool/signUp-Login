@@ -68,8 +68,8 @@ const NewPas = () => {
                 <div className="fixed inset-0 z-50 flex justify-center items-center bg-black/50 p-2 md:p-0">
                     <div className="bg-white shadow-2xl rounded-[20px] p-4 flex flex-col gap-4 justify-center items-center">
                         <Image src={sync} alt="" width={120} height={120} />
-                        <p className="text-[18px] text-center font-bold md:w-[70%] w-full">Your email has successfully been verified</p>
-                        <p className="text-[17px] text-center md:w-[80%] w-full">You&apos;ll be redirected to the login page shortly</p>
+                        <p className="text-[18px] text-center font-bold md:w-[70%] w-[80%]">Your email has successfully been verified</p>
+                        <p className="text-[17px] text-center md:w-[80%] w-[90%]">You&apos;ll be redirected to the login page shortly</p>
                         <Button text="Done" style={{ marginBottom: "20px", borderRadius: "2rem", backgroundColor: "#590209", fontSize: "12px", font: 'bold', padding: "15px", color: '#fff', width: "70%", }} onClick={handleModal}/>
                     </div>
                 </div>

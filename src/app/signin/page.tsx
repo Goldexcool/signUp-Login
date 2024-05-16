@@ -43,7 +43,7 @@ const SignIn = () => {
             <p className='md:text-[20px] text-[15px] font-[700] max-[420px]:text-[12px]'>Uniclique</p>
           </div>
 
-          <div className='flex items-center flex-col'>
+          <div className='flex items-center flex-col justify-center h-screen'>
             <h1 className='md:text-[2.5rem] text-[1.5rem] font-fold font-[700]'>Welcome Back! <span>👋</span></h1>
             <h2 className='md:text-[1rem] text-[.8rem] text-color1 font-[500]'>Please sign into your account</h2>
             <div className='mt-[1rem] p-6 rounded-lg shadow-lg shadow-cyan-500/50 max-w-[100%]  sm:w-[450px] bg-white w-full' >
