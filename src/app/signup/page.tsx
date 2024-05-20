@@ -33,14 +33,14 @@ const SignUp = () => {
         <div style={{
             backgroundImage: `url(${bg.src})`,
             width: '100%',
-            // height: '100vh',
+            height: '140vh',
             backgroundRepeat: "no-repeat",
             backgroundPosition: 'left',
         }} className='outer-container'>
             <section className='bg-left flex justify-center w-full bg-gradient-to-r relative inner-container h-[100vh]' style={{
                 backgroundImage: `url(${bgg.src})`,
                 width: '100%',
-                // height: '100vh',
+                height: '140vh',
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: 'right'
             }} >
@@ -67,7 +67,8 @@ const SignUp = () => {
                                 <Image src={confirmpasswordVisible ? eyeOpen : eyelock} alt='' width={15} height={15} onClick={togConfirm} className='absolute right-[2%] flex justify-center items-center top-[57%]' />
                             </div>
                         </div>
-                        <Button style={{ backgroundColor: "#590209", fontSize: "12px", font: 'bold', padding: "15px", color: '#fff', width: '90%', marginTop: "20px", marginBottom: "200px" }} text='Sign Up' onClick={() => router.push('/verification')} />
+                        <Button style={{ backgroundColor: "#590209", fontSize: "12px", font: 'bold', padding: "15px", color: '#fff', width: '90%', marginTop: "20px", borderRadius: '10px' }} text='Sign Up' onClick={() => router.push('/verification')} />
+                        <Button style={{ backgroundColor: "#590209", fontSize: "12px", font: 'bold', padding: "15px", color: '#fff', width: '90%', marginTop: "2px", borderRadius: '10px' }} text='Already have an account? Sign In' onClick={() => router.push('/signin')} />
                     </div>
                 </div>
             </section>
